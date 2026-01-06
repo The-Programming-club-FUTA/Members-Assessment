@@ -55,4 +55,4 @@ def length_of_longest_substring(s: str) -> int:
 
     return max_l
 
-# This solves the problem without changing too much of the original code logic :-)
+# This solves the problem without changing too much of the original code logic
