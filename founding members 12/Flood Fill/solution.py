@@ -9,11 +9,11 @@ def floodFill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List
             if r + 1 < len(image):
                 dfs(image, r + 1, c, color, new_color)
             if c + 1 < len(image[0]):
-                dfs(image, r, c, color, new_color)
+                dfs(image, r, c + 1, color, new_color)
 
 
     old_color = image[sr][sc]
     if old_color != color:
-        dfs(image, sr, sc, color, color)
+        dfs(image, sr, sc, old_color, color)
 
     return image
